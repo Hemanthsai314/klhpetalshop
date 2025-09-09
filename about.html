@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KLH Petal Shop - Rose Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌹 KLH Petal Shop</h1>
+    <p>Book roses and send anonymous messages</p>
+
+    <form id="roseForm">
+      <label>Student Name</label>
+      <input type="text" name="studentName" required>
+
+      <label>Roll Number</label>
+      <input type="text" name="rollNumber" required>
+
+      <label>How many roses?</label>
+      <input type="number" name="roses" min="1" required>
+
+      <label>Anonymous Message</label>
+      <textarea name="message" rows="4"></textarea>
+
+      <label>Payment Screenshot / Reference ID</label>
+      <input type="text" name="payment" required placeholder="Enter UPI Ref. ID">
+
+      <button type="submit">Submit Booking</button>
+    </form>
+
+    <p id="responseMessage"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
